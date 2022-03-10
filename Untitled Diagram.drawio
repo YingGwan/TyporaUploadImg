@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-10T11:33:15.591Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="eAYFQ0ntWTcvzN0p1H7j" version="17.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-10T11:34:36.410Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="eozmaSK2Dl-wAW4Vp-Ht" version="17.1.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="3432" dy="953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -122,7 +122,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ObpepOgObd0LVibU54qH-26" value="Approximate Jacobian&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-840" y="1015" width="100" height="60" as="geometry" />
+          <mxGeometry x="-840" y="1100" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ObpepOgObd0LVibU54qH-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObpepOgObd0LVibU54qH-28" target="ObpepOgObd0LVibU54qH-35">
           <mxGeometry relative="1" as="geometry" />
@@ -220,6 +220,15 @@
         </mxCell>
         <mxCell id="ObpepOgObd0LVibU54qH-19" value="Update Gradient by Numerical Difference" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-840" y="880" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ObpepOgObd0LVibU54qH-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpSize=2;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontFamily=Times New Roman;fontSize=14;startArrow=none;startFill=0;strokeColor=#000000;strokeWidth=2;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObpepOgObd0LVibU54qH-99" target="ObpepOgObd0LVibU54qH-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ObpepOgObd0LVibU54qH-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpSize=2;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontFamily=Times New Roman;fontSize=14;startArrow=none;startFill=0;strokeColor=#000000;strokeWidth=2;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObpepOgObd0LVibU54qH-99" target="ObpepOgObd0LVibU54qH-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ObpepOgObd0LVibU54qH-99" value="Scanner&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-840" y="995" width="100" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
