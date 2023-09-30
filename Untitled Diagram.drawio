@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-30T17:49:46.563Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="o1iGZxZZ_yUKLoBRqPsZ" version="22.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-30T17:50:25.566Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="qx_EVc5nWHyRvhYIiJyV" version="22.0.0" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="2222" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -33,9 +33,6 @@
         <mxCell id="LtaQJOezJhxfunnw9k85-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LtaQJOezJhxfunnw9k85-14" target="LtaQJOezJhxfunnw9k85-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LtaQJOezJhxfunnw9k85-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LtaQJOezJhxfunnw9k85-14" target="LtaQJOezJhxfunnw9k85-21">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="LtaQJOezJhxfunnw9k85-14" value="Learning-based Control" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="410" y="840" width="310" height="50" as="geometry" />
         </mxCell>
@@ -58,9 +55,6 @@
         </mxCell>
         <mxCell id="LtaQJOezJhxfunnw9k85-19" value="A neural-network involved deformation solver is&amp;nbsp; built to solve the free-form surface-surface approximation problem with pose in the loop in a scale of 1000 times faster compared to previous work." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="850" y="830" width="340" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="LtaQJOezJhxfunnw9k85-21" value="Learning-based Control" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="850" y="960" width="310" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LtaQJOezJhxfunnw9k85-26" value="Convolutional Neural Network is modified to predict the initial guess of actuation parameters, which highly improves the convergence speed at most cases" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1270" y="725" width="340" height="70" as="geometry" />
