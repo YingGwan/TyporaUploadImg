@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-30T17:26:54.299Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="f2UH33l8FZuNaqHdvn5H" version="22.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-30T17:30:07.865Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="tyd2ic9wYeVxYhvvgi9C" version="22.0.0" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="2222" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -41,13 +41,13 @@
           <mxGeometry x="410" y="690" width="310" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LtaQJOezJhxfunnw9k85-17" value="A&amp;nbsp; fast deformation model is built along with parameterized free-form human body surface to predict the mannequin deformation with given actuation, which can further accelerate the simulation speed." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="850" y="570" width="310" height="50" as="geometry" />
+          <mxGeometry x="850" y="540" width="310" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="LtaQJOezJhxfunnw9k85-19" value="A gradient-based fast deformation model" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="850" y="650" width="310" height="50" as="geometry" />
+        <mxCell id="LtaQJOezJhxfunnw9k85-19" value="A gradient-based deformation solver is&amp;nbsp; built to solve the free-form surface-surface approximation problem with pose in the loop in a scale of 1000 compared to previous work." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="670" width="340" height="70" as="geometry" />
         </mxCell>
         <mxCell id="LtaQJOezJhxfunnw9k85-21" value="Learning-based Control" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="850" y="760" width="310" height="50" as="geometry" />
+          <mxGeometry x="850" y="800" width="310" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
