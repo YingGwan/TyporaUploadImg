@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-30T17:59:48.998Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="q3MDydA1cKfUMgvMxC50" version="22.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-30T18:00:24.562Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="nC4w0zUvzb2N-sNf0rbC" version="22.0.0" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="2464" dy="939" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -115,14 +115,17 @@
         <mxCell id="LtaQJOezJhxfunnw9k85-43" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;Iterative design for chamber segmentation with simulation in-the-loop&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="845" y="565" width="355" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="LtaQJOezJhxfunnw9k85-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LtaQJOezJhxfunnw9k85-46" target="LtaQJOezJhxfunnw9k85-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="LtaQJOezJhxfunnw9k85-46" value="Physical Prototype: Fabrication and experimental validation" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="410" y="1090" width="310" height="50" as="geometry" />
+          <mxGeometry x="410" y="1170" width="290" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LtaQJOezJhxfunnw9k85-48" value="Physically fabricate the full-body mannequin with calculated segmentation" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="1200" width="310" height="50" as="geometry" />
+          <mxGeometry x="1287.5" y="1110" width="310" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LtaQJOezJhxfunnw9k85-50" value="rotation platform and fusion algorithm" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="1300" width="310" height="50" as="geometry" />
+          <mxGeometry x="1287.5" y="1210" width="310" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LtaQJOezJhxfunnw9k85-52" value="FK Simulation Training + Sim2Real Training" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1270" y="685" width="340" height="70" as="geometry" />
@@ -134,7 +137,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LtaQJOezJhxfunnw9k85-54" value="We have built full-body mannequin setup&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="840" y="1260" width="310" height="50" as="geometry" />
+          <mxGeometry x="827.5" y="1170" width="310" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
