@@ -1,0 +1,161 @@
+import sys
+import time
+import numpy as np
+
+import serial
+import serial.tools.list_ports
+
+
+class ScaleReader():
+    
+    def __init__(self, baudrate = 9600, timeout = 1.5):
+        self.baudrate = baudrate
+        self.timeout = timeout
+        self.weightGram = -10.0
+        self.serial = serial.Serial()
+        self.serial.baudrate = self.baudrate
+        self.serial.timeout = self.timeout
+        
+        
+    def Connect2SpecificPort(self, portName):
+        try:
+            self.serial.port = portName
+            self.serial.open()
+        except:
+            print(f"[Port Cannt Open!]")
+            return False
+            
+        time.sleep(3.0) #this delay is waiting for CPU to going into main loop
+        #print("After Initialization")
+        self.serial.reset_input_buffer()
+        self.serial.write("AT+ADDRESS\r\n".encode('utf-8'))
+        #self.serial.reset_input_buffer()
+        answer = self.serial.read_until(expected=b"\n")
+        #print("before is: \n"+str(answer))
+        answer = answer.decode("utf-8")
+        #self.ShowInfo(answer)
+        #print("Info is: \n"+str(answer))
+        if answer == "Scale\r\n":
+            #print("[Connection Successful] Scale")
+            
+            self.flag_success = True
+            return True
+        else:
+            self.serial.reset_input_buffer() 
+            print(f"[Openned Port is Wrong!]")
+            return False
+            
+    def AutoConnect(self):
+        
+        self.plist = list(serial.tools.list_ports.comports())
+        #self.showInfo(self.plist[0])
+        #self.ShowInfo(self.plist)
+        self.flag_success = False
+        print(f"[Try Connect All Ports]\n")
+        if len(self.plist) <= 0: 
+            print("no port")
+        else:
+            
+            for port in self.plist:
+                 
+                plist_0 = list(port)
+                portName = plist_0[0]
+                print(f"[Trying] Port{portName}")
+                self.serial.port = portName
+                self.serial.open()
+                time.sleep(3.0) #this delay is waiting for CPU to going into main loop
+                #print("After Initialization")
+                self.serial.reset_input_buffer()
+                self.serial.write("AT+ADDRESS\r\n".encode('utf-8'))
+                #self.serial.reset_input_buffer()
+                answer = self.serial.read_until(expected=b"\n")
+                #print("before is: \n"+str(answer))
+                answer = answer.decode("utf-8")
+                #self.ShowInfo(answer)
+                #print("Info is: \n"+str(answer))
+                if answer == "Scale\r\n":
+                    #print("[Connection Successful] Scale")
+                    
+                    self.flag_success = True
+                    break
+                else:
+                    self.serial.reset_input_buffer() 
+                    print("[Try Next Port]")
+                    
+                
+            if self.flag_success == True:
+                print("[Connection Successful] Scale")
+                return True
+            else:
+                print("[Connection Failed] No Matched Port...")
+                return False
+                
+    def ResetScale(self):
+        if self.flag_success == True:
+            self.serial.reset_input_buffer()
+            self.serial.write("Reset\r\n".encode('utf-8'))
+            answer = self.serial.read_until(expected=b"\n")
+            #print("before is: \n"+str(answer))
+            answer = answer.decode("utf-8")
+            #self.ShowInfo(answer)
+            print(f"[Rest Scale] reply: {answer}")
+            return True
+            
+        else:
+            print(f"[Scale Not in Connection]")
+            return False
+            
+    def GetWeight(self):
+        if self.flag_success == True:
+            self.serial.reset_input_buffer()
+            self.serial.write("Get\r\n".encode('utf-8'))
+            answer = self.serial.read_until(expected=b"\n")
+            #print("before is: \n"+str(answer))
+            answer = answer.decode("utf-8")
+            #self.ShowInfo(answer)
+            #print(f"[Read Weighting] reply: {answer}")
+            
+            try:
+                if answer[-2:] == "\r\n":
+                    valueString = answer[:-2]
+                    self.weightGram = float(valueString)
+            except:
+                #print(f"[Current Reading Skip]")
+                return False, -10.0
+            
+            #print(f"[Read Weighting] reply: {self.weightGram} g")
+            return True, self.weightGram
+        else:
+            print(f"[Scale Not in Connection]")
+            return False, -10.0
+            
+_scaleReader = ScaleReader(9600,1.5)
+ 
+'''
+Step 1: auto-connection to weight sensor
+'''
+
+###way 1: auto-connection by travelling all ports
+# Flag_con = _scaleReader.AutoConnect()
+# if Flag_con == False:
+    # sys.exit(-1)
+    
+###way 1: connection by the port name
+portName = "COM3"
+Flag_con = _scaleReader.Connect2SpecificPort(portName)
+if Flag_con == False:
+    sys.exit(-1)
+    
+'''
+Step 2: reset the scale
+'''
+while _scaleReader.ResetScale()==False:
+    pass
+
+'''
+Step 3: update the weighting value
+'''
+while True:
+    flag, value = _scaleReader.GetWeight()
+    print(f"flag is {flag} value is {value} gram")
+    time.sleep(5.0)
